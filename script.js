@@ -12,12 +12,16 @@ function generatePassword() {
   const setUCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
   const setSpecial = ["!", "#", "$", "%", "&", "*", "+", "=", "?", "@", "^"];
   const setNumbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  var pwdLength = -1;
   maxSet = [];
   password = "";
   /* End declarations */
 
   /* Ask user how long password should be */
-  var pwdLength = prompt("Password Length?\nEnter a number between 1 and 128");
+  do {
+    pwdLength = prompt("Password Length?\nEnter a number between 1 and 128");
+  } while (pwdLength < 1 || pwdLength > 128);
+  
   pwdLength = Math.ceil(pwdLength); // Account for people entering in non-whole numbers.
 
   /* Ask user to include lowercase letters */
