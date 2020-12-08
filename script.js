@@ -26,36 +26,30 @@ function generatePassword() {
     maxSet = maxSet.concat(setLCase);
   }
 
-  console.log(maxSet); // CHECK VALUE OF maxSet
-
   /* Ask user to include uppercase letters */
   var includeUCase = confirm("Would you like to include uppercase letters?");
   if (includeUCase) {
     maxSet = maxSet.concat(setUCase);
   }
-  console.log(maxSet); // CHECK VALUE OF maxSet
 
   /* Ask user to include special characters */
   var includeSpecial = confirm("Would you like to include special characters?");
   if (includeSpecial) {
     maxSet = maxSet.concat(setSpecial);
   }
-  console.log(maxSet); // CHECK VALUE OF maxSet
 
   /* Ask user to include numbers */
   var includeNumbers = confirm("Would you like to include numbers?");
   if (includeNumbers) {
     maxSet = maxSet.concat(setNumbers);
   }
-  console.log(maxSet.length); // CHECK VALUE OF maxSet
 
   /* Create password */
   for (i = 0; i < pwdLength; i++) {
     password = password + maxSet[getRndInteger(0, maxSet.length)];
   }
 
-  console.log(password);
-  alert("Your new password is " + password);
+  /* Write new password in textarea on site */
   document.getElementById("password").value = password;
   return password;
 }
