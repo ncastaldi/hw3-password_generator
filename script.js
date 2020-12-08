@@ -10,11 +10,11 @@ function generatePassword() {
   /* Start declarations */
   const setLCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   const setUCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-  const setSpecial = ["!", "#", "$", "%", "&", "(", ")", "*", "+", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "{ ", " | ", " } ", "~"];
+  const setSpecial = ["!", "#", "$", "%", "&", "(", ")", "*", "+", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "{ ", "|", "}", "~"];
   const setNumbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   var pwdLength = -1;
-  maxSet = [];
-  password = "";
+  var maxSet = [];
+  var password = "";
   /* End declarations */
 
   /* Ask user how long password should be */
@@ -53,8 +53,6 @@ function generatePassword() {
     password = password + maxSet[getRndInteger(0, maxSet.length)];
   }
 
-  /* Write new password in textarea on site */
-  document.getElementById("password").value = password;
   return password;
 }
 
@@ -62,6 +60,8 @@ function generatePassword() {
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
 }
 
 // Add event listener to generate button
