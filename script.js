@@ -1,6 +1,10 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min) ) + min;
+}
+
 function generatePassword() {
 
   /* Start declarations */
@@ -9,7 +13,7 @@ function generatePassword() {
   const setSpecial = ["!", "#", "$", "%", "&", "*", "+", "=", "?", "@", "^"];
   const setNumbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   maxSet = [];
-  password = [];
+  password = "";
   /* End declarations */
 
   /* Ask user how long password should be */
@@ -43,13 +47,15 @@ function generatePassword() {
   if (includeNumbers) {
     maxSet = maxSet.concat(setNumbers);
   }
-  console.log(maxSet); // CHECK VALUE OF maxSet
+  console.log(maxSet.length); // CHECK VALUE OF maxSet
 
   /* Create password */
-  for (i = 0; i <= maxSet; i++) {
-    password[i] = maxSet[Math.random()];
+  for (i = 0; i < pwdLength; i++) {
+    password = password + maxSet[getRndInteger(0, maxSet.length)];
   }
+  
   console.log(password);
+  alert("Your new password is " + password);
   return password;
 }
 
