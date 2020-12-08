@@ -25,25 +25,25 @@ function generatePassword() {
   pwdLength = Math.ceil(pwdLength); // Account for people entering in non-whole numbers.
 
   /* Ask user to include lowercase letters */
-  var includeLCase = confirm("Would you like to include lowercase letters?\nClick 'Ok' for 'Yes or 'Cancel' for 'No'.");
+  var includeLCase = confirm("Would you like to include lowercase letters?\nClick 'Ok' for 'Yes' or 'Cancel' for 'No'.");
   if (includeLCase) {
     maxSet = maxSet.concat(setLCase);
   }
 
   /* Ask user to include uppercase letters */
-  var includeUCase = confirm("Would you like to include uppercase letters?\nClick 'Ok' for 'Yes or 'Cancel' for 'No'.");
+  var includeUCase = confirm("Would you like to include uppercase letters?\nClick 'Ok' for 'Yes' or 'Cancel' for 'No'.");
   if (includeUCase) {
     maxSet = maxSet.concat(setUCase);
   }
 
   /* Ask user to include special characters */
-  var includeSpecial = confirm("Would you like to include special characters?\nClick 'Ok' for 'Yes or 'Cancel' for 'No'.");
+  var includeSpecial = confirm("Would you like to include special characters?\nClick 'Ok' for 'Yes' or 'Cancel' for 'No'.");
   if (includeSpecial) {
     maxSet = maxSet.concat(setSpecial);
   }
 
   /* Ask user to include numbers */
-  var includeNumbers = confirm("Would you like to include numbers?\nClick 'Ok' for 'Yes or 'Cancel' for 'No'.");
+  var includeNumbers = confirm("Would you like to include numbers?\nClick 'Ok' for 'Yes' or 'Cancel' for 'No'.");
   if (includeNumbers) {
     maxSet = maxSet.concat(setNumbers);
   }
