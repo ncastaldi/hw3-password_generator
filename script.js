@@ -10,7 +10,7 @@ function generatePassword() {
   /* Start declarations */
   const setLCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   const setUCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-  const setSpecial = ["!", "#", "$", "%", "&", "*", "+", "=", "?", "@", "^"];
+  const setSpecial = ["!", "#", "$", "%", "&", "(", ")", "*", "+", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "{ ", " | ", " } ", "~"];
   const setNumbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   var pwdLength = -1;
   maxSet = [];
@@ -21,7 +21,7 @@ function generatePassword() {
   do {
     pwdLength = prompt("How many characters would you like in your password?\nEnter a number between 8 and 128");
   } while (isNaN(pwdLength) || pwdLength < 8 || pwdLength > 128);
-  
+
   pwdLength = Math.ceil(pwdLength); // Account for people entering in non-whole numbers.
 
   /* Ask user to include lowercase letters */
