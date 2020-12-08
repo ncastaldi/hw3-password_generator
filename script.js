@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 function getRndInteger(min, max) {
-  return Math.floor(Math.random() * (max - min) ) + min;
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
 function generatePassword() {
@@ -53,9 +53,10 @@ function generatePassword() {
   for (i = 0; i < pwdLength; i++) {
     password = password + maxSet[getRndInteger(0, maxSet.length)];
   }
-  
+
   console.log(password);
   alert("Your new password is " + password);
+  document.getElementById("password").value = password;
   return password;
 }
 
