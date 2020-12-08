@@ -2,9 +2,10 @@
 
 ## Description 
 
-For this assignment, we were asked to create an application that an employee could use to generate a random password based on criteria they’ve selected. This app runs in the browser, and features dynamically updated HTML and CSS powered by JavaScript code. It has a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
+For this assignment, we were asked to create an application that an employee could use to generate a random password based on selected criteria. The app runs in the browser, and features dynamically updated HTML and CSS powered by JavaScript code. It has a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
 
 Live Site: [https://www.castaldi.dev/hw3-password_generator/](https://www.castaldi.dev/hw3-password_generator/)
+
 
 ## Table of Contents
 
@@ -63,4 +64,4 @@ SOFTWARE.
 
 ## Tests
 
-- Test of password length.
+- Password length information captured is validated. It must be a number betwee 8 and 128.
