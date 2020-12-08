@@ -20,7 +20,7 @@ function generatePassword() {
   /* Ask user how long password should be */
   do {
     pwdLength = prompt("How many characters would you like in your password?\nEnter a number between 8 and 128");
-  } while (pwdLength < 8 || pwdLength > 128);
+  } while (isNaN(pwdLength) || pwdLength < 8 || pwdLength > 128);
   
   pwdLength = Math.ceil(pwdLength); // Account for people entering in non-whole numbers.
 
