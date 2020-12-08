@@ -2,7 +2,7 @@
 
 ## Description 
 
-For this assignment, to create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
+For this assignment, we were asked to create an application that an employee could use to generate a random password based on criteria they’ve selected. This app runs in the browser, and features dynamically updated HTML and CSS powered by JavaScript code. It has a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
 
 Live Site: [https://www.castaldi.dev/hw3-password_generator/](https://www.castaldi.dev/hw3-password_generator/)
 
@@ -12,6 +12,7 @@ Live Site: [https://www.castaldi.dev/hw3-password_generator/](https://www.castal
 * [Usage](#usage)
 * [License](#license)
 * [Badges](#badges)
+* [Tests](#tests)
 
 
 ## Installation
@@ -23,11 +24,11 @@ Installation requires uploading the application files and folders to root of web
 
 GitHub Repository: [https://github.com/ncastaldi/hw3-password_generator](https://github.com/ncastaldi/hw3-password_generator)
 
-![alt text](TBD)
+![alt text](reposcreenshot.png)
 
 Live Site: [https://www.castaldi.dev/hw3-password_generator/](https://www.castaldi.dev/hw3-password_generator/)
 
-![alt text](TBD)
+![alt text](sitescreenshot.png)
 
 
 ## License
@@ -58,3 +59,8 @@ SOFTWARE.
 ## Badges
 
 [![GitHub license](https://img.shields.io/github/license/ncastaldi/hw3-password_generator?style=for-the-badge)](https://github.com/ncastaldi/hw3-password_generator/blob/main/license.txt)
+
+
+## Tests
+
+- Test of password length.
