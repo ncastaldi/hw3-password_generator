@@ -49,14 +49,14 @@ function generatePassword() {
   }
 
   /* Confirm any characters have been included */
-  if (!includeLCase && !includeUCase && !includeSpecial && !includeNumbers){
+  if (!includeLCase && !includeUCase && !includeSpecial && !includeNumbers) {
     password = "You didn't select any characters. Please try again with at least one selection."
   } else {
-  /* Create password */
-  for (i = 0; i < pwdLength; i++) {
-    password = password + maxSet[getRndInteger(0, maxSet.length)];
+    /* Create password */
+    for (i = 0; i < pwdLength; i++) {
+      password = password + maxSet[getRndInteger(0, maxSet.length)];
+    }
   }
-}
   return password;
 }
 
